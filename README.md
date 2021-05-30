@@ -50,7 +50,7 @@ LHOST: your local ip of wifi/mobile network
 
 LPORT: you can use any port
 ```
-## Payload Not isntalling, Giving Parsing Error?
+## Payload Not installing, There was a problem parsing the package?
 ```
 1. Install apk editor pro in your mobile
 2. Open Apk Editor Pro and "select an apk fiel and choose your payload"
