@@ -25,17 +25,16 @@ pkg update && pkg upgrade -y
 apt-get install curl
 apt-get install wget
 apt-get install git
-pkg install postgresql
-wget https://raw.githubusercontent.com/loathsomeguy/metasploit/main/metasploit.sh
-chmod +x metasploit.sh
-./metasploit.sh
+apt install ruby
+apt install pg_ctl
+git clone https://github.com/loathsomeguy/Termux-Metasploit
+cd Termux-Metasploit
+bash setup
+
+and press y when ask to press
 ```
 ## After installation complete
-Start `postgresql`
-```bash
-./postgresql_ctl.sh start
-```
-And run `msfconsole`
+run `msfconsole`
 ```bash
 msfconsole
 ```
