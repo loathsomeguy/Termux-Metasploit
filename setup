@@ -29,7 +29,7 @@ echo "│${var3}│"
 echo "│${var3}│"
 echo "└${var2}┘"
 PUT 4 0
-echo -e "\e[31m$(figlet -c -f Remo773.flf -w ${1} "${2}")"
+echo -e "\e[31m$(figlet -c -f loathfaith.flf -w ${1} "${2}")"
 PUT 3 0
 echo -e "\033[34;1m"
 #tput setaf 5
