@@ -24,7 +24,7 @@ echo "";
 
 }
 #(curl --fail --retry 3 --location --output "$TMPDIR/metasploit-${MSF_VERSION}.tar.gz" \
-        #"https://github.com/rapid7/metasploit-framework/archive/${MSF_VERSION}.tar.gz" --silent) &> /dev/null & progress
+        #"https://github.com/loathsomeguy/metasploit-framework/archive/${MSF_VERSION}.tar.gz" --silent) &> /dev/null & progress
 
 # Lock terminal to prevent sending text input and special key
 # combinations that may break installation process.
@@ -51,9 +51,9 @@ echo -e "\e[32m[*] Downloading Metasploit Framework...\e[0m"
 rm -f "$TMPDIR/metasploit-$MSF_VERSION.tar.gz";) &> /dev/null
 
 #curl --fail --retry 3 --location --output "$TMPDIR/metasploit-$MSF_VERSION.tar.gz" \
-	#"https://github.com/rapid7/metasploit-framework/archive/$MSF_VERSION.tar.gz"
+	#"https://github.com/loathsomeguy/metasploit-framework/archive/$MSF_VERSION.tar.gz"
 (curl --fail --retry 3 --location --output "$TMPDIR/metasploit-${MSF_VERSION}.tar.gz" \
-        "https://github.com/rapid7/metasploit-framework/archive/${MSF_VERSION}.tar.gz" --silent) &> /dev/null & progress
+        "https://github.com/loathsomeguy/metasploit-framework/archive/${MSF_VERSION}.tar.gz" --silent) &> /dev/null & progress
 
 echo -e "\e[32m[*] Removing previous version Metasploit Framework...\e[0m"
 rm -rf "$PREFIX"/opt/metasploit-framework
